@@ -1,0 +1,6 @@
+# Jekyll configuration - Desactivar Jekyll completamente
+exclude:
+  - "**/*"
+include:
+  - ".nojekyll"
+
