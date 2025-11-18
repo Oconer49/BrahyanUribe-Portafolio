@@ -73,7 +73,7 @@ export const Banner = () => {
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>
             <div className="animate__animated animate__fadeIn">
-              <h1>{t.banner.hola}<br/><span className="txt-rotate-container"><span className="txt-rotate"><span className="wrap">{text || '\u00A0'}</span></span></span></h1>
+              <h1>{t.banner.hola}<br/><span className="txt-rotate"><span className="wrap">{text}</span></span></h1>
                 <p>{t.banner.description}</p>
                 <button 
                   onClick={handleDownloadCV}
