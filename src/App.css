@@ -423,19 +423,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   /* Prevenir layout shift en banner en móvil */
   .banner h1 {
     font-size: 40px;
-    min-height: 1.4em;
     height: auto;
   }
   
   .txt-rotate {
-    min-height: 1.4em;
+    height: 1.4em;
+    display: inline-block;
   }
   
   .txt-rotate > .wrap {
     min-width: 180px;
-    min-height: 1.4em;
+    height: 1.4em;
     line-height: 1.4em;
     display: inline-block;
+    overflow: hidden;
   }
 }
 
@@ -483,19 +484,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   /* Prevenir layout shift en banner en pantallas muy pequeñas */
   .banner h1 {
     font-size: 32px;
-    min-height: 1.5em;
     line-height: 1.2;
   }
   
   .txt-rotate {
-    min-height: 1.5em;
+    height: 1.5em;
+    display: inline-block;
   }
   
   .txt-rotate > .wrap {
     min-width: 150px;
-    min-height: 1.5em;
+    height: 1.5em;
     line-height: 1.5em;
     display: inline-block;
+    overflow: hidden;
   }
 }
 
@@ -525,7 +527,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1;
   margin-bottom: 20px;
   display: block;
-  min-height: 1.2em;
 }
 .banner p {
   color: #B8B8B8;
@@ -718,17 +719,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .txt-rotate {
   display: inline-block;
-  min-height: 1.2em;
+  height: 1.2em;
   vertical-align: top;
+  overflow: hidden;
 }
 
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
   display: inline-block;
   min-width: 200px;
-  min-height: 1.2em;
+  height: 1.2em;
   text-align: left;
   line-height: 1.2em;
+  overflow: hidden;
 }
 
 /************ Skills Css ************/
