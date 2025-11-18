@@ -50,35 +50,35 @@ export const Skills = () => {
                           className="owl-carousel owl-theme skill-slider"
                         >
                             <div className="item">
-                                <img src="/mysqlLogo.png" alt="MySQL" />
+                                <img src={`${process.env.PUBLIC_URL}/mysqlLogo.png`} alt="MySQL" />
                                 <h5>MySQL</h5>
                             </div>
                             <div className="item">
-                                <img src="/yiiLogo.png" alt="Yii" />
+                                <img src={`${process.env.PUBLIC_URL}/yiiLogo.png`} alt="Yii" />
                                 <h5>Yii Framework</h5>
                             </div>
                             <div className="item">
-                                <img src="/ReactLogo.png" alt="React" />
+                                <img src={`${process.env.PUBLIC_URL}/ReactLogo.png`} alt="React" />
                                 <h5>React</h5>
                             </div>
                             <div className="item">
-                                <img src="/djangoLogo.png" alt="Django" />
+                                <img src={`${process.env.PUBLIC_URL}/djangoLogo.png`} alt="Django" />
                                 <h5>Django</h5>
                             </div>
                             <div className="item">
-                                <img src="/PythonLogo.png" alt="Python" />
+                                <img src={`${process.env.PUBLIC_URL}/PythonLogo.png`} alt="Python" />
                                 <h5>Python</h5>
                             </div>
                             <div className="item">
-                                <img src="/MongoDBLogo.png" alt="MongoDB" />
+                                <img src={`${process.env.PUBLIC_URL}/MongoDBLogo.png`} alt="MongoDB" />
                                 <h5>MongoDB</h5>
                             </div>
                             <div className="item">
-                                <img src="/SQLiteLogo.png" alt="SQLite" />
+                                <img src={`${process.env.PUBLIC_URL}/SQLiteLogo.png`} alt="SQLite" />
                                 <h5>SQLite</h5>
                             </div>
                             <div className="item">
-                                <img src="/flaskLogo.png" alt="Flask" />
+                                <img src={`${process.env.PUBLIC_URL}/flaskLogo.png`} alt="Flask" />
                                 <h5>Flask</h5>
                             </div>
                         </Carousel>
