@@ -3,6 +3,14 @@ import 'react-multi-carousel/lib/styles.css';
 import colorSharp from "../assets/img/color-sharp.png";
 import { useLanguage } from "../contexts/LanguageContext";
 import { translations } from "../translations/translations";
+import mysqlLogo from "../assets/img/mysqlLogo.png";
+import yiiLogo from "../assets/img/yiiLogo.png";
+import reactLogo from "../assets/img/ReactLogo.png";
+import djangoLogo from "../assets/img/djangoLogo.png";
+import pythonLogo from "../assets/img/PythonLogo.png";
+import mongoLogo from "../assets/img/MongoDBLogo.png";
+import sqliteLogo from "../assets/img/SQLiteLogo.png";
+import flaskLogo from "../assets/img/flaskLogo.png";
 
 export const Skills = () => {
   const { language } = useLanguage();
@@ -50,35 +58,35 @@ export const Skills = () => {
                           className="owl-carousel owl-theme skill-slider"
                         >
                             <div className="item">
-                                <img src={`${process.env.PUBLIC_URL}/mysqlLogo.png`} alt="MySQL" />
+                                <img src={mysqlLogo} alt="MySQL" />
                                 <h5>MySQL</h5>
                             </div>
                             <div className="item">
-                                <img src={`${process.env.PUBLIC_URL}/yiiLogo.png`} alt="Yii" />
+                                <img src={yiiLogo} alt="Yii" />
                                 <h5>Yii Framework</h5>
                             </div>
                             <div className="item">
-                                <img src={`${process.env.PUBLIC_URL}/ReactLogo.png`} alt="React" />
+                                <img src={reactLogo} alt="React" />
                                 <h5>React</h5>
                             </div>
                             <div className="item">
-                                <img src={`${process.env.PUBLIC_URL}/djangoLogo.png`} alt="Django" />
+                                <img src={djangoLogo} alt="Django" />
                                 <h5>Django</h5>
                             </div>
                             <div className="item">
-                                <img src={`${process.env.PUBLIC_URL}/PythonLogo.png`} alt="Python" />
+                                <img src={pythonLogo} alt="Python" />
                                 <h5>Python</h5>
                             </div>
                             <div className="item">
-                                <img src={`${process.env.PUBLIC_URL}/MongoDBLogo.png`} alt="MongoDB" />
+                                <img src={mongoLogo} alt="MongoDB" />
                                 <h5>MongoDB</h5>
                             </div>
                             <div className="item">
-                                <img src={`${process.env.PUBLIC_URL}/SQLiteLogo.png`} alt="SQLite" />
+                                <img src={sqliteLogo} alt="SQLite" />
                                 <h5>SQLite</h5>
                             </div>
                             <div className="item">
-                                <img src={`${process.env.PUBLIC_URL}/flaskLogo.png`} alt="Flask" />
+                                <img src={flaskLogo} alt="Flask" />
                                 <h5>Flask</h5>
                             </div>
                         </Carousel>
