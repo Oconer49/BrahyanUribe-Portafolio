@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.png";
-import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import { useLanguage } from "../contexts/LanguageContext";
 import { translations } from "../translations/translations";
@@ -13,17 +12,8 @@ export const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(100);
-  const [index, setIndex] = useState(1);
   const toRotate = [ "FullStack", "Frontend", "Backend" ];
   const period = 2000;
-
-  useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta);
-
-    return () => { clearInterval(ticker) };
-  }, [text, delta, language])
 
   const tick = () => {
     let i = loopNum % toRotate.length;
@@ -47,6 +37,15 @@ export const Banner = () => {
       setDelta(100);
     }
   }
+
+  useEffect(() => {
+    let ticker = setInterval(() => {
+      tick();
+    }, delta);
+
+    return () => { clearInterval(ticker) };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [text, delta, language])
 
   const handleDownloadCV = (e) => {
     e.preventDefault();
