@@ -424,6 +424,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .banner h1 {
     font-size: 40px;
   }
+  
+  /* Ajustar tabs en móvil */
+  .project .nav.nav-pills {
+    width: 90%;
+  }
+  
+  .project .nav.nav-pills .nav-link {
+    font-size: 14px;
+    padding: 15px 8px;
+    letter-spacing: 0.5px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -471,6 +482,26 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .banner h1 {
     font-size: 32px;
     line-height: 1.2;
+  }
+  
+  /* Ajustar tabs en pantallas muy pequeñas */
+  .project .nav.nav-pills {
+    width: 95%;
+    flex-wrap: nowrap;
+  }
+  
+  .project .nav.nav-pills .nav-item {
+    width: 33.33333%;
+    flex-shrink: 0;
+  }
+  
+  .project .nav.nav-pills .nav-link {
+    font-size: 12px;
+    padding: 12px 5px;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 
