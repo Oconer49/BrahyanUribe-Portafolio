@@ -33,14 +33,12 @@ jobs:
         with:
           node-version: '18'
           cache: 'npm'
-          cache-dependency-path: personal-portfolio/package-lock.json
+          cache-dependency-path: package-lock.json
       
       - name: Install dependencies
-        working-directory: personal-portfolio
         run: npm ci
       
       - name: Build
-        working-directory: personal-portfolio
         run: npm run build
       
       - name: Setup Pages
@@ -49,7 +47,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './personal-portfolio/build'
+          path: './build'
       
       - name: Deploy to GitHub Pages
         id: deployment
