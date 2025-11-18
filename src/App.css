@@ -369,6 +369,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     position: fixed;
     width: 100%;
   }
+  
+  /* Ajustar tabs cuando aparece el menú hamburguesa (móvil) */
+  .project .nav.nav-pills {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .project .nav.nav-pills .nav-link {
+    font-size: 13px;
+    padding: 15px 8px;
+    letter-spacing: 0.3px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -427,13 +439,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   
   /* Ajustar tabs en móvil */
   .project .nav.nav-pills {
-    width: 90%;
+    width: 100%;
+    max-width: 600px;
   }
   
   .project .nav.nav-pills .nav-link {
-    font-size: 14px;
-    padding: 15px 8px;
-    letter-spacing: 0.5px;
+    font-size: 13px;
+    padding: 15px 10px;
+    letter-spacing: 0.4px;
   }
 }
 
@@ -486,8 +499,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   
   /* Ajustar tabs en pantallas muy pequeñas */
   .project .nav.nav-pills {
-    width: 95%;
-    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 100%;
   }
   
   .project .nav.nav-pills .nav-item {
@@ -496,12 +509,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
   
   .project .nav.nav-pills .nav-link {
-    font-size: 12px;
+    font-size: 11px;
     padding: 12px 5px;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.2px;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
 }
 
